@@ -67,6 +67,25 @@ v      5
 dtype: int64
 
 
+# Named Indexes:
+
+import pandas as pd
+
+data = {"calories": [420, 380, 390],"duration": [50, 40, 45]}
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+
+print(df) 
+
+
+
+Output:-
+calories  duration
+day1       420        50
+day2       380        40
+day3       390        45
+
+
 
 # dtype (float):
 
@@ -142,5 +161,43 @@ dtype: object
 4    10
 5    10
 dtype: int64
+
+
+
+'''Example: 4'''
+
+import pandas as pd
+
+data = {"calories": [420, 380, 390],"duration": [50, 40, 45]}
+
+var = pd.DataFrame(data)
+
+print(var)
+
+
+
+Output:-
+calories  duration
+0       420        50
+1       380        40
+2       390        45
+
+
+# ADD s1+s2
+
+import pandas as pd
+s1 = pd.Series(10,index = [1,2,3,4,5])
+s2 = pd.Series(10,index = [1,2,3])
+print(s1+s2)
+
+
+Output:-
+1    20.0
+2    20.0
+3    20.0
+4     NaN
+5     NaN
+dtype: float64
+
 
 
