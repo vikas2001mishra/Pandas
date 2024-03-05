@@ -9,3 +9,9 @@
                 ➤ Pandas is a python library used for working with data sets.
                 ➤ It has functions for analyzing, cleaning, exploring, and manipulating data.
                 ➤ Read and write data structures and different formats: csv, XML, JSON,ZIP etc.
+
+# Pandas Data Structures:
+                Three Data Structures:
+                            1. Series: One-Dimensional labeled arrays pd.Series(data)
+                            2. DataFrames: Two-Dimensional data structure with columns, much like a table.
+                            3. Panel: A panel is a 3D container of data.
