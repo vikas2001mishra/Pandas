@@ -15,3 +15,9 @@
                             1. Series: One-Dimensional labeled arrays pd.Series(data)
                             2. DataFrames: Two-Dimensional data structure with columns, much like a table.
                             3. Panel: A panel is a 3D container of data.
+
+➤Series: It is defined as a one-dimensional array that is capable of storing various data types.
+
+import pandas as pd
+a = pd.Series()
+print(a)
