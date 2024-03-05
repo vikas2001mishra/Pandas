@@ -119,3 +119,28 @@ Name      [Python, C, C++, Java]
 Rating             [10, 4, 6, 8]
 Rank                [1, 4, 3, 2]
 dtype: object
+
+
+'''Example: 3'''
+
+import pandas as pd
+dic = {"Name":['Python','C','C++','Java'],"Rating":[10,4,6,8],"Rank":[1,4,3,2]}
+var = pd.Series(dic)
+print(var)
+s = pd.Series(10,index = [1,2,3,4,5])
+print(s)
+
+
+Output:-
+Name      [Python, C, C++, Java]
+Rating             [10, 4, 6, 8]
+Rank                [1, 4, 3, 2]
+dtype: object
+1    10
+2    10
+3    10
+4    10
+5    10
+dtype: int64
+
+
