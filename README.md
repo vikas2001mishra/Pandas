@@ -80,7 +80,7 @@ print(df)
 
 
 Output:-
-calories  duration
+         calories  duration
 day1       420        50
 day2       380        40
 day3       390        45
@@ -177,7 +177,7 @@ print(var)
 
 
 Output:-
-calories  duration
+      calories  duration
 0       420        50
 1       380        40
 2       390        45
@@ -198,6 +198,49 @@ Output:-
 4     NaN
 5     NaN
 dtype: float64
+
+
+
+
+# DataFrames in Pandas:
+                   A Pandas DataFrame is a 2-dimensional data structure, like a 2 dimensional array, or a table with rows and columns.
+
+
+
+
+'''Example: 1'''
+
+import pandas as pd
+l = [1,2,3,4,5]
+var = pd.DataFrame(l)
+print(var)
+print(type(var))
+
+
+Output:-
+   0
+0  1
+1  2
+2  3
+3  4
+4  5
+<class 'pandas.core.frame.DataFrame'>
+
+
+
+'''Example: 2'''
+
+import pandas as pd
+d = {"Name":["Shivanshi","Radha","Shivansh"],"TM":[1000,2000,3000]}
+var = pd.DataFrame(d)
+print(var)
+
+
+Output:-
+      Name    TM
+0  Shivanshi  1000
+1      Radha  2000
+2   Shivansh  3000
 
 
 
