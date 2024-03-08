@@ -246,3 +246,78 @@ Output:-
 
 
 
+
+
+Indexing:- 
+
+import pandas as pd
+d = {"Name":["Shivanshi","Radha","Shivansh"],"TM":[1000,2000,3000]}
+var = pd.DataFrame(d,index = ['a','b','c'])
+print(var)
+
+
+Output:-
+        Name    TM
+a  Shivanshi  1000
+b      Radha  2000
+c   Shivansh  3000
+
+
+
+
+'''Example: 3'''
+
+import pandas as pd
+d = {"Name":["Shivanshi","Radha","Shivansh"],"TM":[1000,2000,3000]}
+var = pd.DataFrame(d,index = ['a','b','c'])
+#print(var)
+print(var["Name"])
+
+
+Output:-
+a    Shivanshi
+b        Radha
+c     Shivansh
+Name: Name, dtype: object
+
+
+'''Example: 4'''
+
+import pandas as pd
+list = [[1,2,3,4,5],[11,12,13,14,15],[11,22,33,44,55]]
+var = pd.DataFrame(list)
+print(var)
+
+
+Output:-
+    0   1   2   3   4
+0   1   2   3   4   5
+1  11  12  13  14  15
+2  11  22  33  44  55
+
+
+
+
+
+
+'''Example: 5'''
+
+
+import pandas as pd
+sr = {"s":pd.Series([1,2,3,4]),"r":pd.Series([5,6,7,8])}
+var = pd.DataFrame(sr)
+print(var)
+
+
+Output:-
+   s  r
+0  1  5
+1  2  6
+2  3  7
+3  4  8
+
+
+
+
+
+# Arithmetic Operators in Python Pandas:-
